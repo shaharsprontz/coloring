@@ -9,32 +9,9 @@
   var swatchUp, swatchDown
   var fillSpeed = 2
   var chosenColor = '#FFFFFF'
-  var colors = ['#FFFFFF', '#8E53A1', '#6ABD46', '#71CCDC', '#F7ED45', '#F7DAAF', '#EC2527', '#F16824', '#CECCCC', '#5A499E', '#06753D', '#024259', '#FDD209', '#7D4829', '#931B1E', '#B44426', '#979797', '#C296C5', '#54B948', '#3C75BB', '#F7ED45', '#E89D5E', '#F26F68', '#F37123', '#676868', '#9060A8', '#169E49', '#3CBEB7', '#FFCD37', '#E5B07D', '#EF3C46', '#FDBE17', '#4E4D4E', '#6B449B', '#BACD3F', '#1890CA', '#FCD55A', '#D8C077', '#A62E32', '#F16A2D', '#343433', '#583E98', '#BA539F', '#9D2482', '#DD64A5', '#DB778D', '#EC4394', '#E0398C', '#68AF46', '#4455A4', '#FBEE34', '#AD732A', '#D91E36', '#F99B2A']
-  var pastels = ["#F70000",
-    "#B9264F",
-    "#990099",
-    "#74138C",
-    "#0000CE",
-    "#1F88A7",
-    "#4A9586",
-    "#FF2626",
-    "#D73E68",
-    "#B300B3",
-    "#8D18AB",
-    "#5B5BFF",
-    "#25A0C5",
-    "#5EAE9E",
-    "#FF5353", "#DD597D", "#CA00CA",
-    "#A41CC6",
-    "#7373FF",
-    "#29AFD6", "#74BAAC",
-    "#FF7373", "#E37795", "#D900D9", "#BA21E0", "#8282FF", "#4FBDDD", "#8DC7BB",
-    "#FF8E8E", "#E994AB", "#FF2DFF", "#CB59E8", "#9191FF", "#67C7E2", "#A5D3CA",
-    "#FFA4A4", "#EDA9BC", "#F206FF", "#CB59E8", "#A8A8FF", "#8ED6EA", "#C0E0DA",
-    "#FFB5B5", "#F0B9C8", "#FF7DFF", "#D881ED", "#B7B7FF", "#A6DEEE", "#CFE7E2",
-    "#FFC8C8", "#F4CAD6", "#FFA8FF", "#EFCDF8", "#C6C6FF", "#C0E7F3", "#DCEDEA",
-    "#FFEAEA", "#F8DAE2", "#FFC4FF", "#EFCDF8", "#DBDBFF", "#D8F0F8", "#E7F3F1"
-  ]
+  var colors = ['#55efc4', '#00b894', '#81ecec', '#00cec9', '#74b9ff', '#0984e3', '#a29bfe', '#6c5ce7'
+                 '#dfe6e9', '#b2bec3', '#ffeaa7', '#fdcb6e', '#fab1a0', '#e17055' ,'#ff7675', '#d63031', '#fd79a8', '#e84393',
+                 '#636e72', '#2d3436', '#FFFFFF']
   var closeOffset
 
   function swatchClick() {
@@ -71,9 +48,9 @@
 
   function svgRandom() {
     $(svgColor).each(function () {
-      var randomNum = Math.floor((Math.random() * pastels.length) + 1);
+      var randomNum = Math.floor((Math.random() * colors.length) + 1);
       TweenMax.to(this, fillSpeed, {
-        fill: pastels[randomNum]
+        fill: colors[randomNum]
       });
     })
   }
@@ -109,7 +86,7 @@
       'text': 'Current Color'
     }).css('background-color', chosenColor).appendTo(swatchHolder)
 
-    $.each(pastels, function () {
+    $.each(colors, function () {
       var swatch = $('<li/>').appendTo(swatchHolder)
       $(swatch).css('background-color', this)
       $(swatch).data('color', this)
