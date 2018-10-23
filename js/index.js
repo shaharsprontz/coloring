@@ -10,7 +10,7 @@
   var fillSpeed = 2
   var chosenColor = '#FFFFFF'
   var colors = ['#55efc4', '#00b894', '#81ecec', '#00cec9', '#74b9ff', '#0984e3', '#a29bfe', '#6c5ce7'
-                 '#dfe6e9', '#b2bec3', '#ffeaa7', '#fdcb6e', '#fab1a0', '#e17055' ,'#ff7675', '#d63031', '#fd79a8', '#e84393',
+                  ,'#dfe6e9', '#b2bec3', '#ffeaa7', '#fdcb6e', '#fab1a0', '#e17055' ,'#ff7675', '#d63031', '#fd79a8', '#e84393',
                  '#636e72', '#2d3436', '#FFFFFF']
   var closeOffset
 
