@@ -1,4 +1,4 @@
-@import url("https://codepen.io/MacEvelly/pen/iJGCw.css");
+/* @import url("https://codepen.io/MacEvelly/pen/iJGCw.css"); */
 
 .holder{
   width:100%;
@@ -51,7 +51,6 @@
 }
 
 #ActivityDIV svg{
-  width:100%;
   display:inline-block;
 }
 #ActivityDIV svg path{
