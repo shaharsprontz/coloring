@@ -57,6 +57,7 @@
   display:inline-block;
   max-width: 350px;
   margin-bottom: 50px;
+  max-height: 500px;
 }
 #ActivityDIV svg path{
   cursor: pointer;
