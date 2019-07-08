@@ -142,7 +142,7 @@
   }
 }(jQuery));
 
-$('#ActivityDIV').makeSVGcolor('fish4.svg')
+$('#ActivityDIV').makeSVGcolor('fish5.svg')
 $('#btnRandom').btnRandom()
 $('#btnClear').btnClear()
 $('#btnDownloadSVG').btnDownload()
