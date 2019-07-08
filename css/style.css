@@ -6,11 +6,13 @@
 .held{
   position:relative;
   overflow:hidden;
+  text-align: center;
+
 }
-.button{
-  width:150px;
-  padding:10px;
-}
+/* .button{
+  width:50px;
+  padding:20px;
+} */
 
 #ActivityDIV .swatchHolder{
   position:absolute;
@@ -52,7 +54,9 @@
 
 #ActivityDIV svg{
   display:inline-block;
+  max-width: 350px;
+  margin-bottom: 50px;
 }
 #ActivityDIV svg path{
-  cursor:pointer;
+  cursor: pointer;
 }
