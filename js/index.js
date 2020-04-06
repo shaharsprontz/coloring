@@ -142,7 +142,7 @@
   }
 }(jQuery));
 
-$('#ActivityDIV').makeSVGcolor('flowers.svg')
+$('#ActivityDIV').makeSVGcolor('something.svg')
 $('#btnRandom').btnRandom()
 $('#btnClear').btnClear()
 $('#btnDownloadSVG').btnDownload()
